@@ -87,6 +87,7 @@
 
 	body {
 		-ms-overflow-style: scrollbar;
+		
 	}
 
 	@media screen and (max-width: 480px) {
@@ -227,6 +228,7 @@
 		line-height: 1.75em;
 		margin: 0 0 2em 0;
 		overflow-x: auto;
+		overflow-y: hidden;
 		padding: 1em 1.5em;
 	}
 
@@ -3583,6 +3585,7 @@ box
 
 			html, body {
 				overflow-x: hidden;
+				
 			}
 
 			body, input, select, textarea {
