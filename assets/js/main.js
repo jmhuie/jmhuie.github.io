@@ -34,7 +34,7 @@
 
 	// Dropdowns.
 		$('#nav > ul').dropotron({
-			alignment: 'right'
+			alignment: 'center'
 		});
 
 	// NavPanel.
@@ -62,7 +62,7 @@
 					hideOnSwipe: true,
 					resetScroll: true,
 					resetForms: true,
-					side: 'left',
+					side: 'right',
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
