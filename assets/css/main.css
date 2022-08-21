@@ -173,13 +173,13 @@
 
 	h3 {
 		font-size: 1.4em;
-		line-height: 1.5em;
+		line-height: 1.6em;
 		letter-spacing: -0.025em;
 	}
 
 	h4 {
-		font-size: .9em;
-		line-height: 1.25em;
+		font-size: 0.9em;
+		line-height: 1.2em;
 		letter-spacing: 0;
 	}
 
@@ -1978,7 +1978,7 @@ box
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 5em);
-		width: 60em;
+		width: 65em;
 	}
 
 		.container.xsmall {
@@ -2264,7 +2264,7 @@ box
 		border-radius: 0px;
 		box-shadow: 0 0px 0 0 #000;
 		margin: 0 0 2em 0;
-		padding: 1.5em;
+		padding: 1.5em 0em;
 	}
 
 		.box > :last-child {
@@ -2992,7 +2992,7 @@ box
 		z-index: 10000;
 		margin: 0 auto; 
 		max-width: calc(100%);
-		width: 60em;
+		width: 70em;
 	}
 
 		#header h1 {
@@ -3092,7 +3092,7 @@ box
 			background-color: transparent;
 			color: #fff;
 			font-weight: 400;
-			font-size: 0.9em;
+			font-size: 1em;
 		}
 		#header input[type="buttononpage"]:before,
 		#header .buttononpage {
@@ -3100,7 +3100,7 @@ box
 			color: #fff;
 			box-shadow: inset 0 0 0 0px #000;
 			font-weight: 400;
-			font-size: 0.9em;
+			font-size: 1em;
 		}
 
 			#header input[type="submit"]:hover,
@@ -3236,7 +3236,7 @@ box
 			}
 
 		.dropotron.level-0 {
-			font-size: 0.8em;
+			font-size: .9em;
 			margin: 0.5em 1em 0 0;
 		}
 
@@ -3274,7 +3274,7 @@ box
 		text-align: center;
 		margin: 0 auto; 
 		max-width: calc(100%);
-		width: 60em;
+		width: 70em;
 		
 		
 	}
@@ -3363,6 +3363,7 @@ box
   color: white;
   font-size: 1.25em;
     font-weight: 300;
+    line-height: 1.3em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3370,7 +3371,7 @@ box
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color:  rgba(50, 50, 50, 0.4);
+  #background-color:  rgba(50, 50, 50, 0.4);
   border-radius: 6px;
   padding: 0em 0em 0em 0em;
 }		
@@ -3412,7 +3413,7 @@ box
 		text-align: center;
 		margin: 0 auto; 
 		max-width: calc(100%);
-		width: 60em;
+		width: 70em;
 	}
 
 		#footer .icons a {
