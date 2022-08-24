@@ -2495,6 +2495,132 @@ box
 				width: 100%;
 			}
 			
+/* Gallery */
+
+	.gallery {
+  		display: grid;
+  	  	width: 100%;
+  	  	grid-template-columns: repeat(4, 1fr);
+  	  	grid-gap: 0.3em;
+  	  	margin: 0 1em;
+	}
+
+		.gallery img {
+  		  	width: 100%;
+  		  	height: 100%;
+  		  	object-fit: cover;
+  		  	overflow: hidden;
+  		  	cursor: pointer;
+		}
+
+		.gallery img:hover {
+			opacity: 0.7;
+		}
+		
+	.modal {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0, 0.7);
+		color: #fff;
+		z-index: 1;
+		overflow: auto;
+		opacity: 0;
+		pointer-events: none;
+		cursor: pointer;
+	}
+	
+	.modalContent {
+		min-height: 100vh;
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+  		align-items: center;	
+	}
+	
+	.modalImg {
+		width: 80%;
+		max-width: 800px;
+	}
+	
+	.modalTxt {
+		margin-top: 1em;
+	}
+	
+	.modalNav {
+		margin-top: 1em;
+	}
+	
+	.modalNav button {
+ 		padding: 10px 45px;
+  		border: 0;
+  		border-radius: 6px;
+  		background-color: rgba(230, 230, 230, 1)
+  		background: none;
+  		color: #000;
+  		outline: none;
+  		cursor: pointer;
+	}
+
+	.modalNav button:hover {
+  		background-color: rgba(209, 209, 209, 1)
+	}
+	
+	
+	
+	.nextBtn {
+  		margin-left: 1em;
+	}	
+	
+	.close {
+		position: absolute;
+		top: 1em;
+		right: 1.5em;
+		font-size: 1.5em;
+		cursor: pointer;
+	}
+	
+	.modal.appear {
+		opacity: 1;
+		pointer-events: all;
+	}
+	
+		.modal.appear .modalImg, 
+		.modal.appear .modalTxt {
+			animation: zoom 0.2s linear;
+		}
+	
+	@keyframes zoom {
+		from {
+			transform: scale(0);
+		}
+		to {
+			transform: scale(1);
+		}
+	}
+	
+	@media (max-width: 1000px) {
+	    .gallery {
+	        grid-template-columns: repeat(3, 1fr);
+	    }
+	}	
+	
+	@media (max-width: 800px) {
+	    .gallery {
+	        grid-template-columns: repeat(2, 1fr);
+	    }
+	}
+
+	@media (max-width: 400px) {
+	    .gallery {
+	        grid-template-columns: repeat(1, 1fr);
+	    }
+	}
+
+
+
 
 /* List */
 
@@ -2989,7 +3115,7 @@ box
 		line-height: 3em;
 		position: fixed;
 		top: 0em;
-		z-index: 10000;
+		z-index: 1;
 		margin: 0 auto; 
 		max-width: calc(100%);
 		width: 70em;
