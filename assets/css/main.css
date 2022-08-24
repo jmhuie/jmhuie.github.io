@@ -2502,7 +2502,6 @@ box
   	  	width: 100%;
   	  	grid-template-columns: repeat(4, 1fr);
   	  	grid-gap: 0.3em;
-  	  	margin: 0 1em;
 	}
 
 		.gallery img {
@@ -2576,9 +2575,9 @@ box
 	
 	.close {
 		position: absolute;
-		top: 1em;
+		top: 2em;
 		right: 1.5em;
-		font-size: 1.5em;
+		font-size: 1.75em;
 		cursor: pointer;
 	}
 	
