@@ -24,8 +24,6 @@
 	</head>
 	<body class="landing is-preload">
 		<div id="page-wrapper">
-			<section id="main" class="container" style="margin-top: -0.75em; background: #fff">
-			</section>
 
 			<!-- Header -->
 				<header id="header" class = "alt">
@@ -48,7 +46,7 @@
 				</header>
 				
 			<!-- Banner -->
-				<section id="banner" style = "padding: 7.5em 0 7.5em 0; margin-top: 0em; 
+				<section id="banner" style = "padding: 10em 0 10em 0; 
 						background-attachment: scroll,							scroll;
 			background-color: #000;
 			background-image: url(images/overlay.png), url(images/research.jpg);
@@ -66,116 +64,108 @@
 					<div class="row">
 					<div class="col-12">
 					
-					<section class="box" >
-						<h3 align="center">Evolutionary Ecomorphology</h3>
-
-								<h4 align="left" style = "font-size: 0.9em"><span class="image right"><img src="images/evoecomorph2.jpg" alt="" style = "border-radius: 0px; width: 29em; margin: 0 auto"/>
-								<figcaption style="font-size: 0.8em">Conceptual schematic of evolutionary ecomorphology. Inspired by S. Santana and C. Law.</figcaption>
-								</span>
-					<p>
-					I am interested in how animal phenotypes are shaped by their ecologies and the physical constraints of their environments. 
-					My research typically investigates how jaws and teeth are shaped by prey and how body shapes are influenced by habitat.
-					</p>
-					
-					<p>I take a comparative and integrative approach to my science. I combine experimental methods, high-speed videography, and field work to characterize animal behavior and ecology. I use high-resolution bio-imaging techniques like CT-scanning 
-					to visualize anatomy and often apply biomechanical models to describe function. Lastly, I use phylogenetic comparative methods to put variation into context and 
-					to better understand how traits change over evolutionary time. </p>
-					
-					Below are some of my current projects and collaborations. 
-					
-					</h4>
-					<a id = "CurrentResearch"></a>
-					</br>
-					<hr>
-					</br>
-						<h3 align="center">Current Research</h3>
-						<div class="row">
-							<div class="col-3 col-12-narrower">
-							<section class="box special" style="padding: 0; background: #fffff">
-  							<div class="TextImage">
-  									<img src="images/aneides.png" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0">
-  
-								</div>
-								<h3 align="center" style="font-size: 1.1em; line-height: 1.4em"">Salamander Locomotor Biomechanics</h3>
-								<h4 align="center">Salamanders live in a variety of habitats from water to land to trees. From a functional perspective, what kinds of morphologies and behaviors have they evolved to move between mediums so easily?</h4>
-
-							</section>
-							</div>
-						
-							<div class="col-3 col-12-narrower">
-							<section class="box special" style="padding: 0; background: #fffff">
-  							<div class="TextImage">
-  									<img src="images/lumpsuckerSquare.jpg" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0" >
-  									
-								</div>
-								<h3 align="center" style="font-size: 1.1em; line-height: 1.4em">Ecomechanics of Biological Suction Cups</h3>
-								<h4 align="center" >Many fishes have evolved adhesive discs made from modified pelvic and pectoral girdles to stick to diverse surfaces. How does disc morphology and performance vary with ecology and phylogeny?</h4>
-
-							</section>
-							</div>
-						
-							<div class="col-3 col-12-narrower">
-							<section class="box special" style="padding: 0; background: #fffff">
-  							<div class="TextImage">
-  									<img src="images/Clinocottus.png" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0">
-  									
-								</div>
-								<h3 align="center" style="font-size: 1.1em; line-height: 1.4em"">Evolutionary Feeding Biomechanics</h3>
-								</a>
-								<h4 align="center">Catching and consuming prey are essential for survival, and yet many fishes feed on difficult prey. How does diet shape feeding morphology? Do extreme prey require more specialized traits?</h4>
-							</section>
-							</div>
-						
-							<div class="col-3 col-12-narrower">
-							<section class="box special" style="padding: 0; background: #fffff">
-							<div class="TextImage">
-  									<img src="images/anoleSquare.jpg" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0">
-  									
-								</div>
-								<h3 align="center" style="font-size: 1.1em; line-height: 1.4em"">Adaptive Radiation and Convergence</h3>
-								</a>
-								<h4 align="center">Anole lizards show strong habitat-morphology relationships that have evolved repeatedly on Caribbean islands. Are these patterns repeatable in Central and South America? If so, to what extent?</h4>
-							</section>
-							</div>
-						
-						</div>
-						<a id = "SegmentGeometry"></a>
-						<hr>
-						</br>
-						<h3 align="center">SegmentGeometry Extension for 3D Slicer</h3>
-						<div class="row">
-							<div class="col-2 col-12-narrower">
-							<section class="box special" style="padding: 0; background: #fffff">
-							<div class="TextImage">
-  									<img src="images/segmentgeometry.png" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0">
-  									
-								</div>
-								
-
-							</section>
-							</div>
-							
-							<div class="col-9 col-12-narrower">
-							<h4 align="left">Second moment of area is a measure of how well the cross-section of a beam will resist bending because of its shape. 
-							Many have used it to investigate the mechanical adaptations of biological structures from stingray jaws to animal limb bones. 
-							With the large availability of micro-CT scans, studying the internal geometry of biological structures has become more accessible but we are limited by available software. 
-							I designed the <i>SegmentGeometry</i> extension for <a href = "https://www.slicer.org/" target = "_blank" style ="color: blue">3D Slicer</a>, to iterate slice-by-slice through 3D structures and calculate second moment of area and other cross-sectional properties.
-							</h4><h4>Read more about beam theory and <i>SegmentGeometry</i> in our paper <a href = "https://doi.org/10.1093/iob/obac009" target = "_blank" style ="color: blue">here</a>.
-							</h4><h4>Learn how to install and use <i>SegmentGeometry</i> <a href = "https://github.com/jmhuie/Slicer-SegmentGeometry" target = "_blank" style ="color: blue">here</a>.</h4>
-
-							</div>
-
-							
-
-						
-						</div>					
+							<!-- Text -->
+							<section class="box">
+								<h3 align="center" >Evolutionary Ecomorphology</h3>
+								<div >
+										
+									<div class="row">
+										<div class="col-7 col-12-narrower">				
+											<br>
+											<h4> I am interested in how animal phenotypes are shaped by their ecologies and the physical constraints of their environments. 
+											My research typically investigates how jaws and teeth are shaped by prey and how body shapes are influenced by habitat.
+											</h4>
+											<br>
+											<h4>I take a comparative and integrative approach to my science. I combine experimental methods, high-speed videography, and field work to characterize animal behavior and ecology. I use high-resolution bio-imaging techniques like CT-scanning 
+											to visualize anatomy and often apply biomechanical models to describe function. Lastly, I use phylogenetic comparative methods to put variation into context and 
+											to better understand how traits change over evolutionary time.</h4>
+											<br>
+											<h4>Below are some of my current projects and collaborations.</h4>
+										</div>
+										<div class="col-5 col-12-narrower" >
+											<span class="image"><img src="images/evoecomorph2.jpg" alt="" style = "border-radius: 0px; width: calc(100%); margin: 0 auto"/></span>
+										</div>
+									</div>
 									
-					 </section>
-				
-					
-					
+									</br>
+									<a id = "CurrentResearch"></a>
+									<hr>
+									</br>
+									
+									<div class="row">
+										<div class="col-3 col-12-narrower">
+										<section class="box special" style="padding: 0; background: #fffff">
+  										<div class="TextImage">
+  												<img src="images/aneides.png" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0">
+  
+											</div>
+											<h3 align="center" style="font-size: 1.1em; line-height: 1.4em"">Salamander Locomotor Biomechanics</h3>
+											<h4 align="center">Salamanders live in a variety of habitats from water to land to trees. From a functional perspective, what kinds of morphologies and behaviors have they evolved to move between mediums so easily?</h4>
 			
-					
+										</section>
+										</div>
+						
+										<div class="col-3 col-12-narrower">
+										<section class="box special" style="padding: 0; background: #fffff">
+  										<div class="TextImage">
+  												<img src="images/lumpsuckerSquare.jpg" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0" >
+  									
+											</div>
+											<h3 align="center" style="font-size: 1.1em; line-height: 1.4em">Ecomechanics of Biological Suction Cups</h3>
+											<h4 align="center" >Many fishes have evolved adhesive discs made from modified pelvic and pectoral girdles to stick to diverse surfaces. How does disc morphology and performance vary with ecology and phylogeny?</h4>
+
+										</section>
+										</div>
+						
+										<div class="col-3 col-12-narrower">
+										<section class="box special" style="padding: 0; background: #fffff">
+  										<div class="TextImage">
+  												<img src="images/Clinocottus.png" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0">
+  												
+											</div>
+											<h3 align="center" style="font-size: 1.1em; line-height: 1.4em"">Evolutionary Feeding Biomechanics</h3>
+											<h4 align="center">Catching and consuming prey are essential for survival, and yet many fishes feed on difficult prey. How does diet shape feeding morphology? Do extreme prey require more specialized traits?</h4>
+										</section>
+										</div>
+						
+										<div class="col-3 col-12-narrower">
+										<section class="box special" style="padding: 0; background: #fffff">
+										<div class="TextImage">
+  												<img src="images/anoleSquare.jpg" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0">
+  									
+											</div>
+											<h3 align="center" style="font-size: 1.1em; line-height: 1.4em"">Adaptive Radiation and Convergence</h3>
+											<h4 align="center">Anole lizards show strong habitat-morphology relationships that have evolved repeatedly on Caribbean islands. Are these patterns repeatable in Central and South America? If so, to what extent?</h4>
+										</section>
+										</div>									
+									</div>
+									
+									
+									<hr>
+									<a id = "SegmentGeometry"></a>
+									<h3 align="center">SegmentGeometry Extension for 3D Slicer</h3>
+									
+									<div class="row">
+										<div class="col-2 col-12-narrower">
+										<section class="box special" style="padding: 0; background: #fffff">
+											<div class="TextImage">
+  												<img src="images/segmentgeometry.png" class="image fit" style = "width:100%; margin: 0 auto; border-radius: 0">
+  											</div>
+										</section>
+										</div>
+										
+										<div class="col-9 col-12-narrower">
+											<h4 align="left">Second moment of area is a measure of how well the cross-section of a beam will resist bending because of its shape. 
+											Many have used it to investigate the mechanical adaptations of biological structures from stingray jaws to animal limb bones. 
+											With the large availability of micro-CT scans, studying the internal geometry of biological structures has become more accessible but we are limited by available software. 
+											I designed the <i>SegmentGeometry</i> extension for <a href = "https://www.slicer.org/" target = "_blank" style ="color: blue">3D Slicer</a>, to iterate slice-by-slice through 3D structures and calculate second moment of area and other cross-sectional properties.
+											</h4><h4>Read more about beam theory and <i>SegmentGeometry</i> in our paper <a href = "https://doi.org/10.1093/iob/obac009" target = "_blank" style ="color: blue">here</a>.
+											</h4><h4>Learn how to install and use <i>SegmentGeometry</i> <a href = "https://github.com/jmhuie/Slicer-SegmentGeometry" target = "_blank" style ="color: blue">here</a>.</h4>
+										</div>
+									</div>					
+								</div>
+
+							</section>
 
 				
 		</section>
