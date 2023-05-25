@@ -146,7 +146,7 @@
 		color: #000;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6, figcaption {
 		color: #000;
 		font-family: "Helvetica", sans-serif;
 		font-weight: 300;
@@ -194,6 +194,13 @@
 		line-height: 1.5em;
 		letter-spacing: 0;
 	}
+	
+	figcaption {
+		font-size: 0.8em;
+		line-height: 1.2em;
+		letter-spacing: 0;
+	}
+	
 
 	sub {
 		font-size: 0.8em;
