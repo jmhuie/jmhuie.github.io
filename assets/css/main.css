@@ -2502,6 +2502,26 @@ box
 				width: 100%;
 			}
 			
+/* Video */
+
+	.video {
+		border-radius: 6px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+	
+		.video.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.video.fit video {
+				display: block;
+				width: 100%;
+			}	
+			
 /* Gallery */
 
 	.gallery {
@@ -2682,14 +2702,12 @@ box
 					padding-right: 0;
 				}
 
-				ul.icons li .icon {
-					color: inherit;
+				ul.icons li .icon i {
+					font-size: 1.75em; /* same size as old :before */
+					color: inherit;     /* inherits text color */
+					vertical-align: middle; /* optional: aligns icon with text nicely */
 				}
-
-					ul.icons li .icon:before {
-						font-size: 1.75em;
-					}
-
+		
 	dl {
 		margin: 0 0 2em 0;
 	}
@@ -2806,11 +2824,11 @@ box
 						width: 100%;
 					}
 
-						ul.actions:not(.fixed) li input[type="submit"].icon:before,
-						ul.actions:not(.fixed) li input[type="reset"].icon:before,
-						ul.actions:not(.fixed) li input[type="button"].icon:before,
-						ul.actions:not(.fixed) li button.icon:before,
-						ul.actions:not(.fixed) li .button.icon:before {
+						ul.actions:not(.fixed) li input[type="submit"].icon i,
+						ul.actions:not(.fixed) li input[type="reset"].icon i,
+						ul.actions:not(.fixed) li input[type="button"].icon i,
+						ul.actions:not(.fixed) li button.icon i,
+						ul.actions:not(.fixed) li .button.icon i {
 							margin-left: -0.5em;
 						}
 
@@ -2934,12 +2952,12 @@ box
 			padding-left: 1.35em;
 		}
 
-			input[type="submit"].icon:before,
-			input[type="reset"].icon:before,
-			input[type="button"].icon:before,
-			.button.icon:before {
-				margin-right: 0.5em;
-			}
+			.button.icon i {
+ 			margin-right: 0.25em;   /* spacing between icon and text */
+			font-size: 1em;        /* matches text height */
+ 			color: inherit;        /* same color as text */
+  			vertical-align: middle;
+  			}
 
 		input[type="submit"].fit,
 		input[type="reset"].fit,
